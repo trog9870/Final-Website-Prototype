@@ -1,2 +1,227 @@
 /*Need to go through and do this for all headers and <p> etc?*/
-h1 { font-family:  'Montserrat', sans-serif; }
+* {
+  font-family: 'Montserrat', sans-serif;;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 15px 0px;
+  grid-template-areas:
+    "TITLE TITLE HOMEPAGE-LINK HOMEPAGE-LINK ."
+    "IMMEDIATE-SUPPORT IMMEDIATE-SUPPORT IMMEDIATE-SUPPORT SUPPORTBLOCK1 SUPPORTBLOCK1"
+    ". SUPPORTBLOCK2 SUPPORTBLOCK2 SUPPORTBLOCK2 SUPPORTBLOCK2"
+    "SUPPORTBLOCK3 SUPPORTBLOCK3 SUPPORTBLOCK3 SUPPORTBLOCK3 SUPPORTBLOCK3";
+}
+.TITLE { grid-area: TITLE; }
+.HOMEPAGE-LINK { grid-area: HOMEPAGE-LINK; }
+.IMMEDIATE-SUPPORT { grid-area: IMMEDIATE-SUPPORT; }
+.SUPPORTBLOCK1 { grid-area: SUPPORTBLOCK1; }
+.SUPPORTBLOCK2 { grid-area: SUPPORTBLOCK2; }
+.SUPPORTBLOCK3 { grid-area: SUPPORTBLOCK3; }
+
+/*Background Image*/
+/*insert later if needed, but look into doing a custom shape.*/
+/*Buttons for the homepage*/
+.buttonhome1 {
+  display: block;
+  width: 100%;
+  height: 30%;
+  text-align: left;
+  font-size: 96px;
+  font-weight: 600;
+  color: #ffffff;
+  background: #D3A081;
+  border: 0px solid #073B4C;
+  padding: 20px 180px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  float: left;
+}
+.buttonhome1:hover {
+background-color: #ffffff;
+color: #D3A081;
+transform: scale(1.05);
+}
+
+.buttonhome2 {
+  display: block;
+  width: 90%;
+  height: 25%;
+  text-align: left;
+  font-size: 72px;
+  font-weight: 600;
+  color: #ffffff;
+  background: #CC8766;
+  border: 0px solid #073B4C;
+  padding: 20px 60px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  float: left;
+}
+.buttonhome2:hover {
+background-color: #ffffff;
+color: #CC8766;
+transform: scale(1.05);
+}
+
+.buttonhome3 {
+  display: block;
+  width: 80%;
+  height: 25%;
+  text-align: left;
+  font-size: 72px;
+  font-weight: 600;
+  color: #ffffff;
+  background: #C48D79;
+  border: 0px solid #073B4C;
+  padding: 20px 60px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  float: left;
+}
+.buttonhome3:hover {
+background-color: #ffffff;
+color: #C48D79;
+transform: scale(1.05);
+}
+
+.buttonhome4 {
+  display: block;
+  width: 70%;
+  height: 25%;
+  text-align: left;
+  font-size: 72px;
+  font-weight: 600;
+  color: #ffffff;
+  background: #8C7E7E;
+  border: 0px solid #073B4C;
+  padding: 20px 60px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  float: left;
+}
+.buttonhome4:hover {
+background-color: #ffffff;
+color: #8C7E7E;
+transform: scale(1.05);
+}
+/*End of homepage buttons*/
+
+
+/*SUPPORT PAGE IMMEDIATE HELP BUTTONS*/
+.ImmediateHelp {
+  display: -ms-inline-grid;
+  width: 50px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  background: #8C7E7E;
+  border: 0px solid #073B4C;
+  padding: 10px 60px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.ImmediateHelp:hover {
+background-color: #ffffff;
+color: #8C7E7E;
+}
+
+/*Home-Page Button for 'About Us'*/
+.homepage {
+  display: grid;
+  width: 50px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  background: #4e6c90;
+  border: 0px solid #073B4C;
+  padding: 10px 60px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  float: 
+}
+.homepage:hover {
+background-color: #ffffff;
+color: #4e6c90;
+}
+
+/* Donation form code. Reappropriated from: 
+How TO - Popup Form. (n.d.). Retrieved November 24, 2020, from https://www.w3schools.com/howto/howto_js_popup_form.asp */
+.open-button {
+  background-color: #4e6c90;
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup form */
+.form-popup {
+  display: none;
+  position: fixed;
+  font-weight: 600;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* The form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Input fields (DO NOT CHANGE 90%, it keeps the input field in the grid container */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 90%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Clicking on input fields */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  font-weight: 600;
+  outline: none;
+}
+
+/* The submit/login button (consider changing colour) */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  font-weight: 600;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+  font-weight: 600;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  transition-duration: 0.4s;
+  background-color: white;
+  color: #4e6c90;
+}
