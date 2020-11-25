@@ -5,15 +5,17 @@
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   gap: 0px 0px;
   grid-template-areas:
-    "TITLE TITLE HOMEPAGE-LINK HOMEPAGE-LINK HOMEPAGE-LINK"
+    "TITLE LOGO HOMEPAGE-LINK HOMEPAGE-LINK HOMEPAGE-LINK"
     "IMMEDIATE-SUPPORT IMMEDIATE-SUPPORT IMMEDIATE-SUPPORT LINK-BOX-1 LINK-BOX-2"
+    "CONTENT-BOX-1 CONTENT-BOX-1 CONTENT-BOX-2 CONTENT-BOX-2 CONTENT-BOX-2"
     "CONTENT-BOX-1 CONTENT-BOX-1 CONTENT-BOX-2 CONTENT-BOX-2 CONTENT-BOX-2"
     "CONTENT-BOX-1 CONTENT-BOX-1 CONTENT-BOX-2 CONTENT-BOX-2 CONTENT-BOX-2";
 }
 .TITLE { grid-area: TITLE; }
+.LOGO {grid-area: LOGO;}
 .HOMEPAGE-LINK { grid-area: HOMEPAGE-LINK; }
 .IMMEDIATE-SUPPORT { grid-area: IMMEDIATE-SUPPORT; }
 .LINK-BOX-1 { grid-area: LINK-BOX-1; }
@@ -112,14 +114,16 @@ transform: scale(1.05);
 
 /*About Us Header*/
 .TITLE {
+  margin-top: 30px;
   margin-left: 50px;
-  font-size: 36px;
+  font-size: 24px;
   color: #c3beba;
 }
 
 /*Immediate Support Header*/
 .immediatesupportTitle{
   margin-left: 50px;
+  color: #c3beba;
 }
 
 /*ABOUT US PAGE IMMEDIATE HELP BUTTONS*/
@@ -168,7 +172,7 @@ color: #4e6c90;
   margin-top: 70px;
   margin-right: 50px;
   display: grid;
-  width: 70px;
+  width: 20%;
   text-align: center;
   font-size: 16px;
   font-weight: 600;
@@ -189,7 +193,7 @@ color: #4e6c90;
   margin-top: 70px;
   margin-right: 50px;
   display: grid;
-  width: 140px;
+  width: 25%;
   text-align: center;
   font-size: 16px;
   font-weight: 600;
@@ -210,7 +214,7 @@ color: #4e6c90;
   margin-top: 70px;
   margin-right: 50px;
   display: grid;
-  width: 100px;
+  width: 20%;
   text-align: center;
   font-size: 16px;
   font-weight: 600;
@@ -231,7 +235,7 @@ color: #4e6c90;
 .linkbox {
   display: grid;
   width: 70%;
-  height: 70%;
+  height: 50%;
   text-align: center;
   font-size: 24px;
   font-weight: 600;
