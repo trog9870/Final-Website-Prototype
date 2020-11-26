@@ -6,17 +6,23 @@
 	<title>repl.it</title>
 	<link href="style.css" rel="stylesheet" type="text/css" />
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap" rel="stylesheet" type='text/css'>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="shortcut icon" href="Favicon.png"/>
 </head>
 
 <body>
 	<!--insert background-->
+	<style>
+		body {
+			background-image: url('aboutusBackground.png');
+		}
+	</style>
 	<div class="grid-container">
 		<div class="TITLE">
 			<h1>ABOUT US<h1>
 		</div>
-    <div class="LOGO">
-      <img <img src="BEYONDBLUE-LOGO.png" alt="Beyond Blue Logo" width="150" height="150" style="margin-right: 100px;margin-top: 30px;">
+		<div class="LOGO">
+			<img <img src="BEYONDBLUE-LOGO.png" alt="Beyond Blue Logo" width="150" height="150" style="margin-right: 100px;margin-top: 30px;">
     </div>
 		<div class="IMMEDIATE-SUPPORT">
       <div class="immediatesupportTitle">
@@ -29,15 +35,32 @@
 			<button class="open-button" onclick="openForm()">DONATE NOW</button>
      <div class="form-popup" id="myForm">
       <form action="/action_page.php" class="form-container">
-      <h1>Login</h1>
+      <h1>Donate</h1>
+
+      <label for="First Name"><b>First Name</b></label>
+      <input type="text" placeholder="Enter First Name" name="First Name" required>
+
+      <label for="Last Name"><b>Last Name</b></label>
+      <input type="text" placeholder="Enter Last Name" name="Last Name" required>
 
       <label for="email"><b>Email</b></label>
       <input type="text" placeholder="Enter Email" name="email" required>
 
-      <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
+      <label for="Donation Amount"><b>Donation Amount</b></label>
+      <br>
+      </br>
+      <input type="radio" id="$50" name="amount" value="50">
+      <label for="$50">$50</label><br>
+      <input type="radio" id="$100" name="amount" value="100">
+      <label for="$100">$100</label><br>
+      <input type="radio" id="$250" name="amount" value="250">
+      <label for="$250">$250</label><br>
+      <input type="radio" id="$500" name="amount" value="500">
+      <label for="$500">$500</label><br>
 
-      <button type="submit" class="btn">Login</button>
+      <br>
+
+      <button type="submit" class="btn">To Payment Page</button>
       <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
       </form>
     </div>
@@ -62,7 +85,7 @@
 
     <div class="CONTENT-BOX-1">
     <p>
-    Beyond Blue works with the community to improve mental health and prevent suicide, so that all people in Australia can achieve their best possible mental health. Through our <strong>Beyond 2020 Strategy</strong>, we are working across three strategic priorities:
+    <strong>Beyond Blue</strong> works with the community to improve mental health and prevent suicide, so that all people in Australia can achieve their best possible mental health. Through our <strong>Beyond 2020 Strategy</strong>, we are working across three strategic priorities:
 </p>
     <p>
 Promoting mental health and wellbeing so people have greater knowledge, feel safe to talk openly about their issues and are supported to ask for help when they need to.

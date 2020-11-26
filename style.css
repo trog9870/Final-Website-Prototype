@@ -23,8 +23,14 @@
 .CONTENT-BOX-1 { grid-area: CONTENT-BOX-1; }
 .CONTENT-BOX-2 { grid-area: CONTENT-BOX-2; }
 
-/*Background Image*/
-/*insert later if needed, but look into doing a custom shape.*/
+/*Homepage Title*/
+.HOMEPAGETITLE{
+  float: right;
+  margin-top: 5%;
+  margin-bottom: 4%;
+  color: white;
+  font-size: 200%;
+}
 /*Buttons for the homepage*/
 .buttonhome1 {
   display: block;
@@ -35,11 +41,13 @@
   font-weight: 600;
   color: #ffffff;
   background: #D3A081;
-  border: 0px solid #073B4C;
+  border: none;
   padding: 20px 180px;
   transition-duration: 0.4s;
   cursor: pointer;
   float: left;
+  margin-left: -1%;
+  margin-top: -1%;
 }
 .buttonhome1:hover {
 background-color: #ffffff;
@@ -56,11 +64,12 @@ transform: scale(1.05);
   font-weight: 600;
   color: #ffffff;
   background: #CC8766;
-  border: 0px solid #073B4C;
+  border: none;
   padding: 20px 60px;
   transition-duration: 0.4s;
   cursor: pointer;
   float: left;
+  margin-left: -0.5%;
 }
 .buttonhome2:hover {
 background-color: #ffffff;
@@ -77,11 +86,12 @@ transform: scale(1.05);
   font-weight: 600;
   color: #ffffff;
   background: #C48D79;
-  border: 0px solid #073B4C;
+  border: none;
   padding: 20px 60px;
   transition-duration: 0.4s;
   cursor: pointer;
   float: left;
+  margin-left: -1%;
 }
 .buttonhome3:hover {
 background-color: #ffffff;
@@ -98,11 +108,12 @@ transform: scale(1.05);
   font-weight: 600;
   color: #ffffff;
   background: #8C7E7E;
-  border: 0px solid #073B4C;
+  border: none;
   padding: 20px 60px;
   transition-duration: 0.4s;
   cursor: pointer;
   float: left;
+  margin-left: -1%;
 }
 .buttonhome4:hover {
 background-color: #ffffff;
@@ -117,13 +128,13 @@ transform: scale(1.05);
   margin-top: 30px;
   margin-left: 50px;
   font-size: 24px;
-  color: #c3beba;
+  color: white;
 }
 
 /*Immediate Support Header*/
 .immediatesupportTitle{
   margin-left: 50px;
-  color: #c3beba;
+  color: #8C7E7E;
 }
 
 /*ABOUT US PAGE IMMEDIATE HELP BUTTONS*/
@@ -240,7 +251,7 @@ color: #4e6c90;
   font-size: 24px;
   font-weight: 600;
   color: #ffffff;
-  background: #CC8766;
+  background: #4e6c90;
   border: none;
   padding: 30px 30px;
   transition-duration: 0.4s;
@@ -249,7 +260,7 @@ color: #4e6c90;
 }
 .linkbox:hover {
 background-color: #ffffff;
-color: #CC8766;
+color: #4e6c90;
 }
 
 /* Donation form code. Reappropriated from: 
@@ -333,4 +344,5 @@ How TO - Popup Form. (n.d.). Retrieved November 24, 2020, from https://www.w3sch
 /*Content Box 1*/
 .CONTENT-BOX-1{
   margin-left: 50px;
+  color: white;
 }
